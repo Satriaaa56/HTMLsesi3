@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poppies Cafe & Bakery</title>
+    <link rel="icon" type="images" href="images/logo poppies cafe & bakery.jpg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: rgb(251, 64, 95);
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul h4 {
+            display: inline;
+            margin: 0 7px;
+            text-align: center;
+
+        }
+        section {
+            padding: 20px;
+            
+        }
+        .menu-table {
+            width: 100%;
+            border-collapse: collapse;
+
+        }
+        .menu-table th, .menu-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left; 
+
+        }
+        .media {
+            text-align: center;
+            margin-top: 20px;
+        }
+        footer {
+            background-color: rgb(251, 64, 95);
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1 id="main-title">Poppies Cafe & Bakery</h1>
+    <nav>
+        <ul>
+            <h4><a href="#home">Home</a></h4>
+            <h4><a href="#menu">Menu</a></h4>
+            <h4><a href="#order">Order Online</a></h4>
+            <h4><a href="#contact">Contact Us</a></h4>
+        </ul>
+    </nav>
+</header>
+
+<!-- SECTION MENU -->
+<section id="menu">
+    <h2>Our Menu</h2>
+    <table class="menu-table">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Croissant</td>
+                <td>Classic buttery croissant</td>
+                <td>Rp20,000</td>
+            </tr>
+            <tr>
+                <td>Cheesecake</td>
+                <td>Creamy New York-style cheesecake</td>
+                <td>Rp45,000</td>
+            </tr>
+            <tr>
+                <td>Cinnamon Roll</td>
+                <td>Sweet, spiced dough rolled with cinnamon and sugar, topped with a glaze.</td>
+                <td>Rp20,000</td>
+            </tr>
+            <tr>
+                <td>Sourdough Toast with Avocado</td>
+                <td>Crunchy sourdough bread topped with smashed avocado and a sprinkle of chili flakes.</td>
+                <td>Rp38,000</td>
+            </tr>
+            <tr>
+                <td>Brownies Fudgy</td>
+                <td>Dense, chocolaty brownies with a fudgy texture and a crispy top layer.</td>
+                <td>Rp35,000</td>
+            </tr>
+            <tr>
+                <td>Tiramisu</td>
+                <td>An Italian dessert with coffee-soaked layers, mascarpone, and cocoa dust.</td>
+                <td>Rp48,000</td>
+            </tr>
+            <tr>
+                <td>Caramel Pudding</td>
+                <td>Soft pudding with a smooth caramel sauce on top.</td>
+                <td>Rp30,000</td>
+            </tr>
+            <tr>
+                <td>Espresso</td>
+                <td>Strong and bold coffee shot</td>
+                <td>Rp15,000</td>
+            </tr>
+            <tr>
+                <td>Cold Brew</td>
+                <td>Refreshing coffee brewed slowly with cold water, delivering a smooth, less acidic taste.</td>
+                <td>Rp35,000</td>
+            </tr>
+            <tr>
+                <td>Latte</td>
+                <td>Smooth espresso combined with creamy steamed milk, topped with a light layer of foam.</td>
+                <td>Rp32,000</td>
+            </tr>
+            <tr>
+                <td>Matcha Latte </td>
+                <td>Rich Japanese green tea powder whisked with milk, offering earthy and creamy flavors.</td>
+                <td>Rp35,000</td>
+            </tr>
+            <tr>
+                <td>Chocolate Milk</td>
+                <td>mooth, sweetened chocolate blended with fresh milk, served hot or cold.</td>
+                <td>Rp30,000</td>
+            </tr>
+            <tr>
+                <td>Lemonade Sparkling</td>
+                <td>Refreshing lemonade with a fizzy twist to brighten up your day.</td>
+                <td>Rp28,000</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<!-- ORDER FORM -->
+<section id="order">
+    <h2>Order Online</h2>
+    <form action="#" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="item">Select Item:</label><br>
+        <select id="item" name="item">
+            <option value="croissant">Croissant</option>
+            <option value="cheesecake">Cheesecake</option>
+            <option value="espresso">Espresso</option>
+            <option value="cinnamonroll">Cinnamon Roll</option>
+            <option value="sourdoughtoastwithavocado">Sourdough Toast with Avocado</option>
+            <option value="browniesfudgy">Brownies Fudgy</option>
+            <option value="tiramisu">Tiramisu</option>
+            <option value="caramelpudding">Caramel Pudding</option>
+            <option value="espresso">Espresso</option>
+            <option value="coldbrew">Cold Brew</option>
+            <option value="latte">Latte</option>
+            <option value="matchalatte">Matcha Latte</option>
+            <option value="chocolatemilk">Chocolate Milk</option>
+            <option value="lemonadesparkling">Lemonade Sparkling</option>
+        </select><br><br>
+
+        <label for="quantity">Quantity:</label><br>
+        <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+
+        <input type="submit" value="Order Now">
+    </form>
+</section>
+
+<!-- SECTION CONTACT -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>📍 Address: Jalan Pesanggrahan No. 33, Tangsel</p>
+    <p>📧 Email: info@cafepoppies.com</p>
+    <p>📞 Phone: +62 857 8295 7295</p>
+
+    <div class="media">
+        <h3>Ice Latte at Poppies</h3>
+        <video width="400" height="300" controls>
+            <source src="images/Ice latte at Poppies.mp4_no watermark.mp4" type="video/mp4">
+        </video>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2024 Poppies Cafe & Bakery. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
